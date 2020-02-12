@@ -45,9 +45,11 @@ def greet_person():
 def show_madlib_form():
     """ Ask if user wants to play a game."""
 
-    picked = request.args.get("final_choice")
+    yep = request.args.get("yes")
 
     game = choice
+
+
 
 
 
