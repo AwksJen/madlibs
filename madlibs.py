@@ -65,6 +65,24 @@ def show_madlib_form():
         return render_template("goodbye.html")
 
 
+@app.route('/madlib')
+def show_madlib():
+
+    python_person = request.args.get("person_input")
+
+    python_color = request.args.get("color_input")
+
+    python_noun = request.args.get("noun_input")
+
+    python_adjective = request.args.get("adjective_input")
+
+    return render_template("madlibs.html",
+                                python_person=html_person,
+                                python_colort=html_color,
+                                python_noun =html_noun,
+                                python_adjective=html_adjective)
+
+
 
 
 
